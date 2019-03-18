@@ -30,7 +30,7 @@ class App extends Component {
     axios.put(`${ baseUrl }/posts/?id=${ id }`, { text })
     .then(response => {
       this.setState({ 
-        posts: response.data
+        posts: response.data`
       })
     })
     .catch(err => console.log(11111, err))
